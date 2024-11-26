@@ -1,9 +1,9 @@
 let score = "33abc";
-console.log(typeof score);
+//console.log(typeof score);
 
 let convertNumber = Number(score);
-console.log(typeof convertNumber);
-console.log(convertNumber); // NaN
+//console.log(typeof convertNumber);
+//console.log(convertNumber); // NaN
 
 //Notes:-
 //1. Converting a string where "33" is present can be converted to number 33 
@@ -16,6 +16,19 @@ console.log(convertNumber); // NaN
 
 let usLoggedIn= 1;
 let convertBoolean = Boolean(usLoggedIn);
-console.log(convertBoolean);
+//console.log(convertBoolean);
 // Boolean "1" to true
 // "0" to false also "" false
+
+// ****************************OPERATIONS********************************
+//operations like  "+" "-"  "*"  "**" "/"  "%" mathematical opeations
+// console.log("1" + 2); 12
+// console.log(1 + "2"); 12
+// console.log("1" + 2 + 2); 122
+// console.log(1 + 2 +"2"); 32
+//console.log(+true); 1
+let gameCounter = 100;
+gameCounter++;
+console.log(gameCounter);
+
+
