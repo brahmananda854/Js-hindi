@@ -57,3 +57,29 @@ let myFun = function(){
 }
 //console.log(myFun());
 console.log(typeof myFun);
+//++++++++++++++++++++++++++++++++++++++++++++++
+
+// 1. Stack memory (Premitive memory) copy of vaiable
+let myName = "Brahmananda";
+let anotherName = myName;  //here the copy of myName is created in stack
+anotherName = "Dipun"; // The value of myName will not be changed as copy created 
+// console.log(anotherName); // OP "Dipun"
+// console.log(myName);  // OP "Brahmananda"
+
+
+
+// 2. Heap memory (Non Premitive memory) reference of original value
+
+let userOne = {
+  email:"Brahma@gmail.com",
+  Upi:"xyz@ybl"
+}
+
+let userTwo = userOne;   // now we have assigned userOne to userTwo here both varibales 
+//are refrence to same memory location as a heap
+userTwo.email="Dipun@gmail.com"; //Now when we change the value of email by userTwo then the
+// value will be changed both the varibales because both are refrence to same memory location
+console.log(userOne.email); //output ===="Dipun@gmail.com"
+
+
+
