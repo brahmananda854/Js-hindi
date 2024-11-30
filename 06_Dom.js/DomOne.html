@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning....</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #ffffff;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-black">
     <!-- Window====>>>DOCUMENT ======>HTML=====>HEAD and BODY  -->
      <!-- HEAD====>TITLE(TEXT Node) and META(attribute)  -->
       <!-- BODY===>DIV(attribute) ===>H1(attribute,text node) and P(text node) -->
-       <h1 class="heading1">This is Heading</h1>
+      <div id="title" class="heading">
+        <h1 class="heading1">This is Heading</h1>
       
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Aut quod totam consectetur at mollitia libero eum molestias 
         culpa accusamus molestiae.</p>
+      </div> 
+      
 
         <!-- document.getElementById("IDname").innerHTML = <h1>Changed H1</h1> -->
 </body>
 </html>
+
+<!-- DOM ++++++++++++++++++++++++++
+
+document.getElementById('idName')
+document.getElementById('idName').id
+document.getElementById('idName').class
+document.getElementById('idName').className
+document.getElementById('idName').getAttribute
+
+-->
+
