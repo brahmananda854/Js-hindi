@@ -1,0 +1,80 @@
+1. Learn more about Methods and properties of strings Arrays and objects
+2. learn more Deep Copy and shalow Copy
+3. learn Arrays OF FROM and isArray methods 
+*************************************************
+code:
+******
+let val1 =10;
+let val2 =20;
+
+function addNum(num1,num2){
+let total =num1+num2;
+return total
+}
+
+let result = addNum(val1,val2);
+let result2 = addNum(10,3);
+
+
+JS Execution context
+
+Global Execution context
+
+Functional Execution context
+Eval Execution context
+
+
+Memory creation phase ---> memory allocation to variables
+Execution phase ----> all operations
+
+Global Execution context ===> Created first and allocated to This
+Memory phase ===> all variables are created and store in memory
+val1=undefind and val2=undefind
+addNum==> definition
+result1 = undefined
+result2 = undefind
+
+JS Execution context
+
+val1 = 10;
+val2= 20;
+
+addNum =======> new execution context created (new Environment+ Execution thread)
+inside this sandbox again memory phase and execution phase created
+Memory phase
+val1 = undefind
+val2 = undefind
+total = undefind
+
+Execution phase
+num1 = 10
+num2 = 20
+total =30
+after execution total is returned to global/parent execution context
+Now delete addNum execution context
+for let result2 = addNum(10,3);  repeat above.
+*********************************************************
+Call Stack
+*****************************************8
+
+JS execution context comes and deleted
+Global Execution context
+
+Last in first Out (LIFO) happend 
+
+function One(){
+    console.log("Execute One")
+    Two();
+}
+
+function Two(){
+    
+    console.log("Execute Two")
+    Three();
+}
+
+function Three(){
+    console.log("Execute Three")
+}
+
+One();
