@@ -38,3 +38,87 @@ document.getElementById('idName').getAttribute
 
 -->
 
+<!-- document.getElementById('title').getAttribute('id')
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').setAttribute('class','test')
+const title = document.getElementById('title')
+
+title.style.backGroundColor = "green"
+title.style.padding ="15px"
+
+//adding/getting contents
+
+title.textContent (provides text inside element)
+
+title.innerHTML (Provides all the HTML values with tags)
+
+title.innerText (only visible codes are coming doesnot support elements )
+
+title.innerContent(It will show hidden content as well doesnot support elements)
+
+document.getElementsByClassName('heading')
+//For single elements
+***************************
+document.querySelector('h1'); (retrive first H1)
+document.querySelectorAll('h1'); (retrives all H1)
+document.querySelector('#title');
+document.querySelector('.heading');
+document.querySelector('input[type="password"]');
+
+//for multiple Selector 
+********************************
+const tempLiList = document.querySelectorAll('li')
+
+//Node list and HTMLCollections are not exactly arrays
+
+tempLiList[0].style.color = 'green';
+
+//HTMLCollections
+const tempList= document.getElementsByClassName('list-item');
+
+//convert it to Array 
+const myConverted = Array.from(tempClassList); //converted to Array
+
+// Now run Array methods
+
+myConverted.forEach((li)=>(li.style.color = "Orange"));
+ -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai</title>
+</head>
+<body>
+        <div class="parent">
+
+            <div class="days">Monday</div>
+            <div class="days">Tuesday</div>
+            <div class="days">WednesDay</div>
+            <div class="days">ThursDay</div>
+            <div class="days">Friday</div>
+            <div class="days">Saturday</div>
+        </div>
+</body>
+<script>
+    const parent = document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent.children[0].innerHTML);
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+        
+    }   
+
+    //(parent.firstElementChild) //gives first elemnt child of that parent
+    //(parent.lastElementChild) //gives last elemnt child of that parent
+    //console.log(day1.parentElement);
+     //console.log(day1.nextElementSibling);
+
+     //console.log("NODES : ",parent.childNodes); //displays all as node like enter gaps everything
+    
+    </script>
+</html> 
+
+-->
