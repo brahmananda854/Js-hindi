@@ -78,3 +78,30 @@ function Three(){
 }
 
 One();
+/////////////////////////////////////
+ASYNC Code
+*******************
+
+JAVASCRIPT is Synchronous and single threaded
+
+code execute will be 1 by 1 ;
+JS is runtime environment always
+
+===> Execution context 
+execute one line of code at a time
+
+like : console.log(1) Each operation wait for last one to complete
+	 console.log(2) 
+
+Block code              vs 		Non blocking code:
+
+block the flow of program            read code async
+
+reading file sync 			 read file async
+
+//EVENTS
+********************
+ // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
